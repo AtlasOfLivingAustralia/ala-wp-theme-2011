@@ -12,9 +12,14 @@
 	<nav id="fat-footer">
 	<?php do_action('wp_menubar','fat-footer'); ?>
 	</nav>
-	<section class="gbif"><p><a href="http://www.gbif.org/"><img src="<?php bloginfo('template_directory'); ?>/images/GBIF.png" width="52" height="50" alt="GBIF logo" /></a> The Atlas of Living Australia is the Australian node of the <a href="http://www.gbif.org/" class="external">Global Biodiversity Information Facility (GBIF)</a>.</p><div class="img-right"><img src="<?php bloginfo('template_directory'); ?>/images/agi-s.png" width="167" height="46" alt="Atlas of Living Australia, an Australian Government Initiative" /></div></section>
+	<section class="gbif">
+	    <p><a href="http://www.gbif.org/"><img src="<?php bloginfo('template_directory'); ?>/images/GBIF.png" width="52" height="50" alt="GBIF logo" /></a> The Atlas of Living Australia is the Australian node of the <a href="http://www.gbif.org/" class="external">Global Biodiversity Information Facility (GBIF)</a>.</p>
+	    <div style="display:inline-block;float:right;"><img src="<?php bloginfo('template_directory'); ?>/images/agi-s.png" width="167" height="46" alt="Atlas of Living Australia, an Australian Government Initiative" /></div>
+	    <div style="display:inline-block;float:right;"><img src="<?php bloginfo('template_directory'); ?>/images/NCRIS_PROVIDER_rev_c.png"  alt="NCRIS, an Australian Government Initiative" /></div>
+	</section>
 	<section class="copyright">
-		<div class="img-left"><a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons"><img src="<?php bloginfo('template_directory'); ?>/images/creativecommons.png" width="88" height="31" alt="" /></a></div><p>This site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons" class="external">Creative Commons Attribution 3.0 Australia License</a>. Provider content may be covered by other <a href="<?php echo get_permalink(24277);?>" title="Terms of Use">Terms of Use</a>.</p>
+		<div class="img-left"><a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons"><img src="<?php bloginfo('template_directory'); ?>/images/creativecommons.png" width="88" height="31" alt="" /></a></div>
+		<p>This site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons" class="external">Creative Commons Attribution 3.0 Australia License</a>. Provider content may be covered by other <a href="<?php echo get_permalink(24277);?>" title="Terms of Use">Terms of Use</a>.</p>
 	</section>
 </footer><!--close footer-->
 <?php wp_footer(); ?>
