@@ -1,0 +1,130 @@
+:first-child+html #nav-1-2-3 ol li{
+	display:inline;
+	float:left;
+	position:relative;
+	margin-bottom:12px!important;
+} 
+* html #nav-1-2-3 ol li{
+	display:inline;
+	float:left;
+	position:relative;
+}
+header#page-header nav#nav-1-2-3 ol li {
+	float:left;
+	width: 210px; 
+	min-height: 120px;
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; 
+	background-color: #fff; 
+	position: relative; 
+	margin: 12px 12px 12px 0;
+	padding:12px 12px 6px 12px;
+}
+header#page-header nav#nav-1-2-3 ol li span.numbered, header#page-header nav#nav-1-2-3 ol li span.grey{
+	position:absolute;
+	top:-18px;
+	left:-9px;
+	color:#fff;
+	-moz-border-radius: 5em; -webkit-border-radius: 5em; border-radius: 5em;
+	background-color:#3a5c83;
+	font-family:"Arial Narrow", Arial, Helvetica,sans-serif;
+	font-weight:narrow;
+	font-size:1.8em;
+	line-height:1;
+	padding:.3em .6em;
+}
+header#page-header nav#nav-1-2-3 ol li span.grey{
+	background-color:#333a3f;
+	position:relative;
+	top:12px;
+	left:0;
+	float:left;
+	padding:0 .5em;
+	text-align:center;
+	margin:0 6px;
+	height:1.7em;
+	line-height:1.6em;
+}
+header#page-header nav#nav-1-2-3 ol li.double {
+	width:456px;
+}
+header#page-header nav#nav-1-2-3 ol li.last {
+	margin-right:0;
+}
+header#page-header nav#nav-1-2-3 ol li h2{
+	padding:18px 0 17px 0;
+}
+header#page-header nav#nav-1-2-3 ol li p{
+	font-size:1em;
+}
+header#page-header nav#nav1-2-3 div {
+	float:left;
+	position:relative;
+}
+#expedition-stats h2 {
+	background:url(../images/compassrose.png) 75% top no-repeat;
+}
+#expedition-stats ul {
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+}
+section#personnel section{
+	float:left;
+	width:25%;
+}
+section#personnel section ol {
+	margin:0 0 0 12px;
+	padding:0 0 24px 24px;
+}
+section#personnel section h3 {
+	text-align:center;
+}
+section#personnel section h3 img {
+	display:block;
+	margin:0 auto 6px auto;
+}
+table.bvp-expeditions {
+	width:100%;
+	border:1px solid #d1d1d1;
+}
+table.bvp-expeditions thead th {
+	font-weight:bold;
+	background-color:#f0f0e8;
+	text-align:center;
+}
+table.bvp-expeditions th, table.bvp-expeditions td {
+	border-bottom:1px solid #d1d1d1;
+}
+table.bvp-expeditions thead th {
+	padding:12px 6px;
+	vertical-align:middle;
+} 
+
+table.bvp-expeditions td {
+	padding:0 6px 6px 6px;
+	vertical-align:middle;
+}
+table.bvp-expeditions td img {
+	padding:0 0 0 6px;
+}
+table.bvp-expeditions tbody th {
+	padding: 12px 0 0 12px;
+	border-bottom:none;
+}
+table.bvp-expeditions td.type {
+	text-align:center;
+}
+table.bvp-expeditions td.type img {
+	display:block;
+	margin:0 auto 6px auto;
+	padding:0;
+	text-align:center;
+}
+.ui-widget-header {
+    border: 1px solid #3a5c83;
+    background: #fff url(../images/progress_1x100b.png) 50% 50% repeat-x;
+}
+
+.ui-widget-content {
+    border: 1px solid #3a5c83;
+}

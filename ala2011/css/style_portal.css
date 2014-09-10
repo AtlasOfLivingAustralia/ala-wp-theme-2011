@@ -1,0 +1,328 @@
+/*CSS reset*/
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,textarea { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th { font-weight: normal; font-style: normal; }
+fieldset,img { border: none; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*clear fix*/
+#banner:after,#header:after,#content:after, #nav-tabs:after,#nav-tabs-sub:after,#footer-nav:after,#footer:after, #footer ul:after{ 
+	 content: ".";  
+	 display: block; 
+	 height: 0; 
+	 clear: both; 
+	 visibility: hidden; 
+}
+/*end fix*/
+.ui-tabs-hide{
+	display:none;	
+}
+/* page layout */
+html {
+	font-size: 62.5%;
+	background-color:#c4c4c4;
+	height:100%;
+}
+body {
+	background:transparent url(http://www.ala.org.au/wp-content/themes/ala/images/bg.jpg) center 0 repeat-x;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	width:100%;
+	font-size:1.3em;
+	line-height:1.6em;
+}
+
+iframe#portal {border:none;}
+/* FONTS,COLORS other than main body font*/
+#nav-tabs li, #nav-tabs-sub li{
+	font:1.2em/1 Arial, Helvetica, sans-serif;
+}
+#footer p {
+	line-height:31px;
+}
+#footer
+{
+	color:#fff;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family:arial, helvetica,sans-serif;
+	color: #7d8804;
+}
+
+h1{
+	font-size:2.0em;
+	line-height:1;
+	padding:10px 15px 5px 15px;
+	color:#000;
+}
+
+h2{
+	font-size:1.6em;
+	line-height:1;
+	padding-bottom:10px;
+}
+
+h3 {
+	font-size:1.4em;
+	line-height:1.4em;
+}
+
+h4, h5, h6 {
+	font-weight:bold;
+	color:#555;
+	line-height:1.4em;
+}
+h4{
+	font-size:1.2em;
+}
+h5{
+	font-size:1.1em;
+}
+h6{
+	font-size:.9em;
+	color:#333;
+	letter-spacing:.1em;
+}
+
+p, ul, ol {
+	padding-bottom:.8em;
+}
+
+/*WEIGHT,STYLE*/
+em, i {
+	font-style:italic;	
+}
+
+strong, b {
+	font-weight:bold;
+}
+
+strong em, em strong {
+	font-weight: bold;
+	font-style: italic;
+}
+/*end font*/
+/* LISTS */
+ul {
+	list-style:square;
+	margin-left:30px;
+}
+ol {
+	list-style:decimal;
+	margin-left:30px;
+}
+
+/* end Lists*/
+/*LINKS*/
+a:link, a:visited{
+	color:#01716e;
+	text-decoration: underline;
+	outline:none;
+}
+
+a:hover, a:active, #nav-tabs li a:hover.selected {
+	color:#dd3102;
+	text-decoration:underline;
+	outline:none;
+}
+#footer li {
+	display:inline;
+	background:url(images/footernav-bg.png) right center no-repeat;
+	padding-right:5px;
+	margin-right:3px;
+}
+#footer li.last {
+	background-image:none;
+	padding-right:0;
+	margin-right:0;
+}
+
+#footer a:link, #footer a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+
+#footer a:hover, #footer a:active {
+	color:#fff;
+	text-decoration:underline;
+}
+#footer-nav {
+	width:100%;
+	height:2em;
+	overflow:hidden;
+}
+
+/*end Links*/
+/*STRUCTURE*/
+#wrapper{
+	text-align: left;
+}
+
+#banner {
+	width:1000px;
+	margin: 0 auto;
+	height:68px;
+	position:relative;
+}
+
+#logo {
+	float:left;
+	position:relative;
+}
+
+#logo img {
+	border:0;
+}
+
+#logo img a {
+	border:0;
+}
+#nav {
+	float:right;
+	width:65px;
+	margin-right:15px;
+	position:relative;
+	height:40px;
+	display:inline;
+}
+
+#nav ul li {
+	display:inline;
+}
+#nav li a {
+	float: left;
+	padding: 40px 0 0 0;
+	overflow: hidden;
+	height: 0px !important;
+	border: none;
+}
+
+#nav li a{width:50px;background:transparent url(http://www.ala.org.au/wp-content/themes/ala/images/nav_help.png) no-repeat 0 0;}
+#nav li a:hover{background-position:0 -47px;}
+
+#header {
+	float:left;
+	position:relative;
+	display:inline;
+	background-color:#fafbf5;
+	border-color: #e8eace!important;
+	-moz-border-radius: 7px 7px 0 0; /* FF1+ */
+	-webkit-border-radius:7px 7px 0 0; /* Saf3+, Chrome */
+	border-radius: 7px 7px 0 0; /* Opera 10.5, IE 9 */
+	background-image: -moz-linear-gradient(bottom, #e8eace, #fafbf5); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #e8eace),color-stop(1, #fafbf5)); /* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafbf5', EndColorStr='#e8eace'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafbf5', EndColorStr='#e8eace')"; /* IE8 */
+	text-shadow: 1px 1px 0px #fff;
+	outline:none;
+	position:absolute;
+	left:259px;
+	bottom:0;
+}
+
+#content {
+	width:100%;
+	margin:0 auto;
+	background-color:#fff;
+	border-top:6px solid #e8eace;
+}
+
+#footer {
+	margin:0;
+	background-color:#707070;
+	padding:10px 15px 0 15px;
+	-moz-border-radius: 0 0 7px 7px; /* FF1+ */
+	-webkit-border-radius: 0 0 7px 7px; /* Saf3+, Chrome */
+	border-radius: 0 0 7px 7px; /* Opera 10.5, IE 9 */
+	background-image: -moz-linear-gradient(top, #999999, #666666); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #999999),color-stop(1, #666666)); /* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#666666'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#666666')"; /* IE8 */
+}
+
+#footer ul {
+	float:left;
+	margin:0!important;
+}
+
+#footer ul#menu-footer-legal{
+	float:right;
+}
+.left {
+	float:left;
+	position:relative;
+}
+.left img {
+	padding-right:10px;
+}
+/*end Structure*/
+/*TABS
+#nav-tabs {
+	padding:0 15px;
+	margin-top:-1px;
+	width:35%;
+	border-right:6px solid #e8eace;
+}
+
+#nav-tabs-sub {
+	margin-top:-1px;
+	padding-bottom:5px;
+}
+
+#nav-tabs ul, #nav-tabs ul li, #nav-tabs-sub ul, #nav-tabs-sub ul li {
+	display:inline;
+}
+
+#nav-tabs li a,#nav-tabs-sub li a {
+	float:left;
+	position:relative;
+	display:block;
+	padding:15px 10px 10px 10px;
+	text-decoration:none;
+	border:1px solid #fff;
+	border-top:none;
+	border-color:transparent;
+}
+
+#nav-tabs li a:active,#nav-tabs-sub li a:active {color:#7d8804;}
+
+#nav-tabs li a.selected,#nav-tabs .ui-tabs-nav .ui-tabs-selected a {
+	background-color:#e8eace;
+	color:#7d8804;
+	border-color: #e8eace!important;
+	-moz-border-radius: 0 0 7px 7px;
+	-webkit-border-radius: 0 0 7px 7px;
+	border-radius: 0 0 7px 7px;
+	background-image: -moz-linear-gradient(bottom, #fafbf5, #e8eace);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #fafbf5),color-stop(1, #e8eace)); 
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e8eace', EndColorStr='#fafbf5');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e8eace', EndColorStr='#fafbf5')";
+	text-shadow: 1px 1px 0px #fff;
+	outline:none;
+}
+
+#nav-tabs-sub li a.selected,#nav-tabs-sub .ui-tabs-nav .ui-tabs-selected a {
+	background-color:#fff;
+	color:#7d8804;
+	border-color: #e8eace!important;
+	-moz-border-radius: 0 0 7px 7px;
+	-webkit-border-radius: 0 0 7px 7px;
+	border-radius: 0 0 7px 7px;
+	background-image:none!important;
+	outline:none;
+}
+
+.tab-section {
+	padding:5px 15px 15px 15px; 
+	width:35%;
+	border-right:6px solid #e8eace;
+}
+
+#sub-section{
+	padding:0 5px;
+	width:102%;
+	background-color:#fafbf5;
+	border:1px solid #e8eace;
+	margin:5px 0 0 -3%;
+}
+/*end Tabs*/

@@ -1,0 +1,280 @@
+
+th, td {
+    vertical-align: top;
+}
+
+p > a.showHideLink {
+    margin: 0;
+}
+
+div#decoratorBody:after,div#searchResults:after,#facets:after,div.solrResults:after,#accordion h3:after,#subnavlist ul:after,div.results p:after{ 
+	 content: ".";  
+	 display: block; 
+	 height: 0; 
+	 clear: both; 
+	 visibility: hidden; 
+}
+/* Facet links */
+#facets {
+   width: 214px;
+   /*margin-right: 15px;*/
+   float:left;
+   border-bottom:1px solid #d9d9d9;
+   background-color:#f0f0f0;
+}
+
+#removeFacet {
+    display: block;
+    padding: 10px;
+    /*margin-top: 42px;
+    margin-bottom: 10px;*/
+    background-color: #D3E0EA;
+    border: 1px solid #99B5E3;
+    /*-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;*/
+}
+#removeFacet li {
+    list-style-type: disc;
+}
+div#accordion > h3.ui-state-active {
+    /*background-color: #d6d6d6 !important;*/
+}
+div#decoratorBody {
+    /*padding: 10px;
+    color: #444;*/
+	padding:0 0 15px 15px;
+}
+div#searchResults {
+	padding:0 15px 15px 0;
+}
+#refine-results {
+	padding:10px 0 3px 0;
+	border-bottom:1px solid #d9d9d9;
+	/*margin-right:15px;*/
+	height:100%;
+	overflow:hidden;
+}
+#refine-results h2 {
+	width:214px;
+	float:left;
+}
+#refine-results h3 {
+	font-size:1em;
+	width:767px;
+	float:left;
+	padding-top:2px;
+}
+#refine-results h3 strong {
+	font-size:1.4em;
+}
+#dropdowns {
+	padding:5px;
+	background-color:#f0f0f0;
+	border-bottom:1px solid #d9d9d9;
+	margin-left:15px;
+}
+div.solrResults {
+    width:767px;
+    float: left;
+}
+
+div.results p {
+   border-bottom:1px solid #d9d9d9;
+   padding-bottom:.8em!important;
+   height:100%;
+}
+div.results h4 {
+	font-size:1em;
+	padding-top:.8em;
+}
+div.results span {
+	display:block;
+}
+div.results {
+	margin:0 0 1.2em 15px;
+}
+div.results img {
+	padding:0;
+	margin-left:15px;
+}
+/*div.results a img {
+	border:1px solid #01716e;
+}
+div.results a:hover img {
+	border:1px solid #dd3102;
+}*/
+div#resultsStats {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+
+
+div#searchTerms {
+/*    padding: 4px 0px;*/
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+div#searchTypes {
+    /*padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;*/
+}
+div#searchTypes ul {
+    list-style: none;
+    margin: 0;
+}
+div#searchTypes ul li {
+    /*padding: 2px 5px;
+    width: 100%;*/
+}
+div#searchTypes ul li.active {
+   /* font-weight: bold;
+    color: #222;
+    background-color: #99B5E3;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;*/
+}
+#refineMore, #refineLess {
+    margin-top: 5px;
+}
+#refineLess {
+    display: none;
+}
+#accordion {
+    display: none;
+}
+#accordion h3 {
+	border-top:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9;
+    font-size:1em;
+	font-weight:bold;
+	outline:none;
+	padding:4px 5px 4px 15px;
+	line-height:2em;
+}
+#accordion h3 a {
+	text-decoration:none;
+	display:block;
+	float:left;
+	width:100%;
+	/*padding:5px 5px 5px 15px;*/
+	background: url(../images/facet-arrow.png) 3px top no-repeat;
+}
+#accordion h3 a.open {
+	background-position:3px bottom;
+}
+
+div#sortWidget {
+    text-align: right;
+}
+
+#subnavlist ul {
+  list-style:none;
+  padding:5px 5px 10px 15px;
+  margin:0;
+  background-color:#fff;
+  height:100%;
+}
+
+#searchNavBar {
+	text-align:center;
+}
+
+#searchNavBar ul,#searchNavBar ul li {
+	display:inline;
+	list-style:none;
+}
+#searchNavBar ul {
+	float:right;
+	margin:0 auto;
+}
+#searchNavBar ul li a,#searchNavBar ul li.currentPage{
+	display:inline-block;
+	padding:0 5px;
+	border:1px solid #01716e;
+	text-decoration:none;
+	float:left;
+	margin:0 5px 0 0;
+}
+#searchNavBar ul li.currentPage {border-color:#ccc;color:#dd3102;}
+#searchNavBar ul li a:hover{
+	border-color:#dd3102;
+}
+#prevPage a, #nextPage a{
+	display:inline-block;
+	border:none!important;
+	margin:0!important;
+	padding:0!important;
+	float:left;
+}
+#prevPage, #nextPage {color:#666;display:inline-block;float:left;padding:0 5px 0 0!important;}
+#prevPage {text-align:right;}
+#nextPage {text-align:left;}
+
+/* Record sighting search page */ 
+#focussedSearch { style: margin-left:15px; }
+
+.recordSighting { display: inline; margin-right: 5px;}
+
+/* search page additions */
+
+.highlight { font-weight: bold; }
+    div.results span .resultsLabel {
+    color: #555;
+    font-weight: normal;
+}
+div.results span.highlight {
+    display: inline;
+}
+/*#facets {
+    margin-top:-1px;
+}
+#facets > h3 {
+    border-bottom: 1px solid #E8EACE;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 2em;
+}
+#facets  h3 {
+    padding: 3px 4px;
+}*/
+#subnavlist li {
+    text-transform: capitalize;
+}
+#facets #accordion { display: block; }
+div.results span.commonNameSummary {
+    display: inline;
+    color: #222;
+}
+li.showHide a {
+    font-size: 11px;
+    text-decoration: none;
+}
+
+a.plain {
+    text-decoration: none;
+}
+#regionalisations table {
+    border: none;
+}
+#regionalisations thead, #regionalisations thead th {
+    border-top: none; /*2px solid #D9D9D9;*/
+    border-bottom: none;
+}
+#regionalisations th {
+    padding: 5px 5px;
+}
+#regionalisations td: {
+    padding-top: 10px;
+}
+#regionalisations td {
+    padding: 0 5px;
+}
+
+#quickFindDiv {
+    margin: 12px 5px;
+}

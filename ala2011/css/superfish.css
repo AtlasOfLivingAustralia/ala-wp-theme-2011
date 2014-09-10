@@ -1,0 +1,143 @@
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			100%; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+
+.two-column-left .sf-menu li {
+	float:			right;
+	position:		relative;
+}
+
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+.two-column-left .sf-menu li:hover ul,
+.two-column-left .sf-menu li.sfHover ul {
+	left:			134px;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			-15em; /* match ul width */
+	top:			0;
+}
+.two-column-left ul.sf-menu li li:hover ul,
+.two-column-left ul.sf-menu li li.sfHover ul {
+	left:			134px; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			-15em; /* match ul width */
+	top:			0;
+}
+.two-column-left ul.sf-menu li li li:hover ul,
+.two-column-left ul.sf-menu li li li.sfHover ul {
+	left:			134px; /* match ul width */
+	top:			0;
+}
+
+/*** SKIN ***/
+.sf-menu {
+	float:			right;
+	margin-bottom:	1.4em;
+	border-bottom:1px solid #e8eace;
+}
+
+.two-column-left .sf-menu {
+	float:left;
+}
+
+.sf-menu ul {
+	border-bottom:1px solid #e8eace;
+}
+.sf-menu a {
+	border-top:		1px solid #e8eace;
+	padding: 		.75em 1em;
+	text-decoration:none;
+}
+.sf-menu a:link, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#01716e;
+}
+.sf-menu a:hover, .sf-menu a:active  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#dd3102;
+}
+.sf-menu li {
+	background:		#fff;
+}
+.sf-menu li li {
+	background:		#fafbf5;
+}
+.sf-menu li li li {
+	background:		#f1f3de;
+}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active,
+.sf-vertical li:hover > a , .sf-vertical li.sfHover > a{
+	background:		#fafbf5;
+	color:			#dd3102;
+	outline:		0;
+}
+
+.sf-menu li li a:hover, .sf-menu li li a:active,.sf-vertical li li:hover > a  {
+	background:#f1f3de;
+}
+.sf-menu li li li a:hover,.sf-menu li li li a:active {
+	background:#e9ebd4;
+}
+
+.sf-vertical li:hover > a , .sf-vertical li.sfHover > a  {z-index:100;}
+
+/*** adding sf-vertical in addition to sf-menu creates a vertical menu ***/
+.sf-vertical, .sf-vertical li {
+	width:	100%;
+}
+/* this lacks ul at the start of the selector, so the styles from the main CSS file override it where needed */
+.sf-vertical li:hover ul,
+.sf-vertical li.sfHover ul {
+	left:	-15em; /* match ul width */
+	top:	0;
+}
+
+.two-column-left .sf-vertical li:hover ul,
+.two-column-left .sf-vertical li.sfHover ul {
+	right:	-149px; /* match ul width */
+	top:	0;
+}

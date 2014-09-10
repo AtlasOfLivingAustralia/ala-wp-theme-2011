@@ -1,0 +1,90 @@
+
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	left: 0;
+	bottom: 0;
+	width: 99.8%;
+	background: #f0f0f0;
+	border:1px solid #ccc;
+	-moz-border-radius: 7px; /* FF1+ */
+	-webkit-border-radius: 7px; /* Saf3+, Chrome */
+	-o-border-radius: 7px;
+	-icab-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px; /* Opera 10.5, IE 9 */
+}
+
+.jScrollIntervalTrack { 
+	position: absolute;
+}
+
+.jScrollPaneDrag {
+	position: absolute;
+	background: #016071 url(../images/grip.png) center center no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	-moz-border-radius: 7px; /* FF1+ */
+	-webkit-border-radius: 7px; /* Saf3+, Chrome */
+	-o-border-radius: 7px;
+	-icab-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px; /* Opera 10.5, IE 9 */
+}
+.jScrollPaneDrag:hover {
+	background-color:#dd3102;
+}	
+.jScrollPaneDragLeft {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jScrollPaneDragRight {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+a.jScrollArrowLeft {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	text-indent: -2000px !important;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+	width: 10px;
+}
+a.jScrollArrowLeft:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollArrowRight {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px !important;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+	width: 10px;
+}
+a.jScrollArrowRight:hover {
+	/*background-color: #f60;*/
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}

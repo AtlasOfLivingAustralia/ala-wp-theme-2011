@@ -1,0 +1,333 @@
+/*
+Theme Name: Atlas of Living Australia
+Theme URI: http://www.ala.org
+Description: The WordPress theme for the Atlas public site.
+Version: 2.0
+Author: Dena Paris
+Tags: 
+
+*/
+
+/* RESET */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,textarea,iframe { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th { font-weight: normal; font-style: normal; }
+fieldset,img { border: none; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+header, hgroup, nav, section, footer { display: block; }
+
+nav ol,nav ul,nav li{list-style:none;margin:0;padding:0;}
+
+/*clear fix*/
+#page-header:after,
+.inner:after,
+.col-one:after,
+.col-two:after,
+.col-wide:after,
+.col-narrow:after,
+.two-column:after,
+.panes:after,
+section:after,
+header:after,
+hgroup:after,
+nav:after,
+article:after,
+#content-search:after,
+form#search-form:after,
+ul.button-tabs:after,
+div.alerts:after,
+.clearfix:after
+{ 
+	 content: ".";  
+	 display: block; 
+	 height: 0; 
+	 clear: both; 
+	 visibility: hidden; 
+}
+#page-header,
+.inner,
+.col-one,
+.col-two,
+.col-wide,
+.col-narrow,
+.two-column,
+.panes,
+section,
+header,
+hgroup,
+nav,
+article,
+#content-search,
+form#search-form,
+ul.button-tabs,
+div.alerts,
+.clearfix {zoom:1;}
+/*end fix*/
+.hide { display:none; }
+/* page layout */
+body {
+	background-color:#fffef7;
+	color:#333a3f;
+}
+body div header, body div nav, footer {
+	font:normal .95em/1.8em Arial, Helvetica, sans-serif;
+}
+body div header#site-header {
+	width:100%;
+	height:56px;
+	text-align:left;
+	background-color: #3d464c;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3d464c), to(#353d43)); 
+	background-image: -webkit-linear-gradient(top, #3d464c, #353d43); 
+	background-image:    -moz-linear-gradient(top, #3d464c, #353d43);
+	background-image:     -ms-linear-gradient(top, #3d464c, #353d43);
+	background-image:      -o-linear-gradient(top, #3d464c, #353d43);
+	background-image:         linear-gradient(top, #3d464c, #353d43);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3d464c', EndColorStr='#353d43');
+	border-bottom:2px solid #5c656b;
+}
+body div header#site-header h1 {
+	float:left;
+	position:relative;
+	padding:0;
+	width:315px;
+}
+body div header#site-header #nav-search {
+	padding-top:1px;
+	float:left;
+	position:relative;
+	width:657px;
+}
+body div header#site-header nav {
+	float:right;
+	position:relative;
+	padding:4px 12px 0 0;
+}
+body div header#site-header nav li {
+	display:inline;
+}
+body div header#site-header nav li:after{
+	color:#fff;
+	content: " | ";
+}
+body div header#site-header nav li.last:after{
+	content: "";	
+}
+*:first-child+html #site-header nav li{
+	padding-right:2px;
+	margin-right:4px;
+	background:transparent url(images/pipe.png) center right no-repeat;
+}
+*:first-child+html #site-header nav li.last{
+	padding-right:0px;
+	margin-right:0px;
+	background-image:none;
+}
+body div header#site-header nav li a:link, body div header#site-header nav li a:visited, body div header#site-header nav li a:hover, body div header#site-header nav li a:active {
+	color:#fff;
+	text-decoration:none;
+}
+body div header#site-header nav li a:hover {
+	text-decoration:underline;	
+}
+body div header#site-header #header-search {
+	float:right;
+	position:relative;
+}
+div.alerts {
+	width:100%;
+	position:absolute;
+	background-color:#f8f0af;
+    border-top:1px solid #fde202;
+    border-bottom:1px solid #fde202;
+	height:1.8en;
+	overflow:hidden;
+	z-index:1000;
+}
+div.alert {
+	text-align:center;
+	margin:0 auto;
+	width:972px;
+	padding:6px 14px;
+}
+.inner {
+	text-align:left;
+	margin:0 auto;
+	width:972px;
+	padding:12px 14px 0 14px;
+}
+.fluid header .inner, .fluid .inner {
+	min-width:1000px;
+	width:97%;
+	margin:0!important;
+}
+footer {
+	width:998px;
+	margin:0 auto;
+	padding:0 0 7px 0;
+	text-align:left;
+	background-color:#f0f0e8;
+	border:1px solid #d1d1d1;
+}
+.fluid footer {
+	width:100%;
+	margin:0;
+	border-left:none;
+	border-right:none;
+	min-width:1000px;
+}
+
+footer nav#nav-footer-site {
+	border-bottom:1px solid #d1d1d1;
+	margin-bottom:10px;
+	padding:10px 0 9px 12px;
+	background-color:#e6e6dd;
+}
+
+footer nav#nav-footer-site li {
+	display:block;
+	float:left;
+	position:relative;
+	display:inline-block;
+	margin-right:12px;
+	width:140px;
+	font-size:1.2em;
+	background:transparent url(images/arrow-right.png) left 6px no-repeat;
+	padding-left:12px;
+}
+
+footer nav#nav-footer-site li.first,footer nav#nav-footer-site li.last  {
+	width:127px;
+}
+
+footer nav#nav-footer-site li.last {
+	margin-right:0!important;
+}
+
+footer nav#fat-footer {
+	border-bottom:1px solid #d1d1d1;
+	padding:3px 12px 12px 12px;
+	font-size:.9em;
+	line-height:1.6em;
+}
+
+footer nav#fat-footer ul, footer nav#fat-footer ul li {
+	vertical-align:top;
+}
+
+footer nav#fat-footer ul li {
+	display:block;
+	float:left;
+	position:relative;
+	display:inline-block;
+	width:152px;
+	margin-right:12px;
+	font-weight:bold;
+}
+
+footer nav#fat-footer ul li.first {
+	width:139px;
+}
+
+footer nav#fat-footer ul li.last {
+	width:139px;
+	margin-right:0!important;
+}
+
+footer nav#fat-footer ul li li {
+	display:block;
+	float:none;
+	width:auto;
+	margin:0;
+	font-weight:normal;
+}
+
+footer nav#fat-footer ul li li a:link, footer nav#fat-footer ul li li a:visited {
+	color:#333a3f;
+	text-decoration:none;
+}
+
+footer nav#fat-footer ul li li a:hover,footer nav#fat-footer ul li li a:active {
+	color:#df4a21;
+}
+
+footer section {
+	padding:0 12px;	
+}
+footer section.gbif {
+	padding:12px;
+	border-bottom:1px solid #d1d1d1;
+	line-height:50px;
+}
+
+footer section.gbif img {
+	float:left;
+	padding-right:5px;	
+}
+footer section p {
+	padding-bottom:0;
+	float:left;	
+}
+footer section .img-left {
+	 width:98px;
+	 float:left;
+}
+footer section .img-right {
+	width:167px;
+	float:right;
+	margin-left:10px;
+}
+footer .copyright {
+	padding-top:12px;
+	font-size:.95em;
+	line-height: 31px;
+}
+
+nav ol {
+	margin-bottom:0;
+}
+
+footer nav#nav-footer-site li a:link, footer nav#nav-footer-site li a:visited {
+	color:#333a3f;
+	text-decoration:none;
+}
+
+footer nav#nav-footer-site li a:hover, footer nav#nav-footer-site li a:active {
+	color:#df4a21;
+	text-decoration:none;
+}
+/*end link and text styles*/
+
+#header-search form label {
+	display:none;
+}
+
+#header-search form input{
+	width:200px;
+	height:27px;
+	position:relative;
+	top:-2px;
+	outline:none;
+	font: normal 1.2em/1 Arial, Helvetica, sans-serif;
+	padding:0 6px;
+	margin:0 7px 6px 0!important;
+	border:1px #a5acb2 solid;
+}
+
+#header-search form input{
+	color:#000;
+}
+
+form .placeholder {
+	
+	font: regular 1.8em/1 Arial, Helvetica, sans-serif;
+}
+input::-webkit-input-placeholder {
+   
+	font: regular 1.8em/1 Arial, Helvetica, sans-serif;
+}
+input:-moz-placeholder {
+   
+	font: regular 1.8em/1 Arial, Helvetica, sans-serif;
+}
